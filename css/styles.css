@@ -141,9 +141,15 @@ margin-left: auto;
 }
 
 .header-soc-link:hover,
-.header-soc-link:active,
-.header-soc-link:focus {
+.header-soc-link:focus,
+.header-soc-link.active {
  color: #404bbf;
+}
+
+.header-menu-link:hover::after,
+.header-menu-link:focus::after,
+.header-menu-link.active::after {
+  transform: scaleX(1);
 }
 
 .hero {
@@ -233,7 +239,6 @@ margin-left: auto;
     align-items: center;
     border: 1px solid #8E8F99;
     background-color: #F4F4FD;
-    padding: 24px 100px;
     border-radius: 4px;
     height: 112px;
     width: 100%;
